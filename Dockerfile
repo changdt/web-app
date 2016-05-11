@@ -74,8 +74,11 @@ RUN pecl install mongodb && \
 RUN curl -sL https://deb.nodesource.com/setup_4.x | bash - && \
     apt-get install -y nodejs
 
+# Update npm
+RUN npm install -g npm
+
 # Install node packages
-RUN npm install -g npm gulp bower
+RUN npm install -g gulp bower
 
 # Install debugging tool
 RUN apt-get -y install \
