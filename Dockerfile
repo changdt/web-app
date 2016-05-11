@@ -111,7 +111,6 @@ VOLUME ["/usr/share/nginx/html", "/etc/nginx/ssl", "/etc/nginx/site-enabled"]
 ADD www /usr/share/nginx
 
 # Update nginx config
-ADD nginx/ssl /etc/nginx/ssl
 ADD nginx/nginx.conf /etc/nginx/nginx.conf
 ADD nginx/sites-enabled /etc/nginx/sites-enabled
 
