@@ -107,7 +107,7 @@ RUN mkdir /usr/lib/composer && \
     mv composer.phar /usr/local/bin/composer
 
 # Create web folder
-VOLUME ["/usr/share/nginx/html", "/etc/nginx/ssl", "/etc/nginx/site-enabled"]
+VOLUME ["/usr/share/nginx", "/etc/nginx/sites-enabled"]
 ADD www /usr/share/nginx
 
 # Update nginx config
