@@ -24,6 +24,7 @@ RUN apt-get install -y \
     git \
     curl \
     wget \
+    zip \
     supervisor \
     zlib1g-dev \
     openssl \
