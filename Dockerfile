@@ -40,6 +40,7 @@ RUN apt-get install -y \
     libfreetype6-dev \
     libmcrypt-dev \
     openssh-server \
+    beanstalkd \
     python-setuptools && \
     apt-get clean all
 
